@@ -1,0 +1,61 @@
+.home, .about, .contact{
+    height: 100%;
+}
+.home{
+    margin-top: 65px;
+}
+.navbar-fixed {
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  .dark-mode-toggle.dark {
+    /* Style for dark mode button */
+    color: #fff; /* Change text color for dark mode */
+  }
+  
+  .dark-mode-toggle.light {
+    /* Style for light mode button */
+    color: #000; /* Change text color for light mode */
+  }
+  
+.home-img{
+    border-radius: 50%;
+    height: 70%;
+    width: 50%;
+}
+.home .container{
+    /* max-width: fit-content; */
+    margin: 0 auto;
+    /* width: 100vw; */
+}
+.home p{
+    text-align: center;
+}
+.home h4{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.expertise img{
+    width: 60%;
+    height: 70%;
+    padding: 20px;
+    border: 1px solid purple;
+}
+.expertise h1{
+    text-align: center;
+margin: 25px 0px 45px 0px;
+}
+.expertise .row{
+    padding-top: 20px;
+}
