@@ -5,10 +5,9 @@ import App from "./App.jsx";
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/portfolio">
       <App />
     </Router>
   </React.StrictMode>
