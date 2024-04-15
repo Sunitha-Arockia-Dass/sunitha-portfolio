@@ -12,52 +12,52 @@ const Expertise = React.forwardRef((props, ref) => {
       <Container className="d-flex justify-content-center">
         <Row>
           <Col xs={6} md={2}>
-            <Image src="\Images\html5.png" fluid rounded />
+            <Image src="public\Images\html5.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\css3.png" fluid rounded />
+            <Image src="public\Images\css3.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\javascript.png" fluid rounded />
+            <Image src="public\Images\javascript.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\javascriptes6.png" fluid rounded />
+            <Image src="public\Images\javascriptes6.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\react.png" fluid rounded />
+            <Image src="public\Images\react.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\vuejs.png" fluid rounded />
+            <Image src="public\Images\vuejs.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\nodejs.png" fluid rounded />
+            <Image src="public\Images\nodejs.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\expressjs.png" fluid rounded />
+            <Image src="public\Images\expressjs.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\mongodb.jpg" fluid rounded />
+            <Image src="public\Images\mongodb.jpg" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\nextjs.png" fluid rounded />
+            <Image src="public\Images\nextjs.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\npm.jpg" fluid rounded />
+            <Image src="public\Images\npm.jpg" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\bootstrap.png" fluid rounded />
+            <Image src="public\Images\bootstrap.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\reactbootstrap.png" fluid rounded />
+            <Image src="public\Images\reactbootstrap.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\gsap.png" fluid rounded />
+            <Image src="public\Images\gsap.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\git.png" fluid rounded />
+            <Image src="public\Images\git.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="\Images\handlebarsjs.png" fluid rounded />
+            <Image src="public\Images\handlebarsjs.png" fluid rounded />
           </Col>
                   </Row>
       </Container>

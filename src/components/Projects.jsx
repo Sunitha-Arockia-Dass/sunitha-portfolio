@@ -18,10 +18,10 @@
 //   };
 
 //   const projects = [
-//     { id: 1, imageUrl: "/Images/Chiceggs.png", title: "Chic & Eggs", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-//     { id: 2, imageUrl: "/Images/HEALTH.png", title: "H.E.A.L.T.H", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-//     { id: 3, imageUrl: "/Images/SThospital.png", title: "ST Hospital", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-//     { id: 4, imageUrl: "/Images/javascript.png", title: "Portfolio", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
+//     { id: 1, imageUrl: "public/Images/Chiceggs.png", title: "Chic & Eggs", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+//     { id: 2, imageUrl: "public/Images/HEALTH.png", title: "H.E.A.L.T.H", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+//     { id: 3, imageUrl: "public/Images/SThospital.png", title: "ST Hospital", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+//     { id: 4, imageUrl: "public/Images/javascript.png", title: "Portfolio", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
 //   ];
   
 
@@ -64,10 +64,10 @@ const Projects = React.forwardRef((props, ref) => {
   };
 
   const projects = [
-    { id: 1, imageUrl: "/Images/Chiceggs.png", title: "Chic & Eggs", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-    { id: 2, imageUrl: "/Images/HEALTH.png", title: "H.E.A.L.T.H", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-    { id: 3, imageUrl: "/Images/SThospital.png", title: "ST Hospital", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
-    { id: 4, imageUrl: "/Images/javascript.png", title: "Portfolio", techs: [{ id: 1, name: "HTML5", image: "/Images/html5.png" }], description: "test" },
+    { id: 1, imageUrl: "public/Images/Chiceggs.png", title: "Chic & Eggs", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+    { id: 2, imageUrl: "public/Images/HEALTH.png", title: "H.E.A.L.T.H", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+    { id: 3, imageUrl: "public/Images/SThospital.png", title: "ST Hospital", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
+    { id: 4, imageUrl: "public/Images/javascript.png", title: "Portfolio", techs: [{ id: 1, name: "HTML5", image: "public/Images/html5.png" }], description: "test" },
   ];
 
   return (
