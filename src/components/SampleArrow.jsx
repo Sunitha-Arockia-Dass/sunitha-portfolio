@@ -20,8 +20,7 @@ const SampleNextArrow = (props) => {
     <div
       className={className}
       style={{ ...style, display: 'block', background: 'green' }}
-      onClick={onClick}
-    >
+      onClick={onClick} >
       <FaArrowRight />
     </div>
   );
