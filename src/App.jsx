@@ -15,6 +15,8 @@ function App() {
   const projectsRef = useRef(null);
 
   const scrollToSection = (sectionRef) => {
+    console.log("Scrolling to section:", sectionRef.current);
+
     if (sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }

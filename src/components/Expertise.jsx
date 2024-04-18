@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import HTML from "../../public/Images/html5.png"
 
 const Expertise = React.forwardRef((props, ref) => {
   return (
@@ -12,7 +13,7 @@ const Expertise = React.forwardRef((props, ref) => {
       <Container className="d-flex justify-content-center">
         <Row>
           <Col xs={6} md={2}>
-            <Image src="public\Images\html5.png" fluid rounded />
+            <Image src={HTML} fluid rounded />
           </Col>
           <Col xs={6} md={2}>
             <Image src="public\Images\css3.png" fluid rounded />
@@ -33,10 +34,10 @@ const Expertise = React.forwardRef((props, ref) => {
             <Image src="public\Images\nodejs.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="public\Images\expressjs.png" fluid rounded />
+            <Image src="public\Images\express.jpg" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
-            <Image src="public\Images\mongodb.jpg" fluid rounded />
+            <Image src="public\Images\mongodb.png" fluid rounded />
           </Col>
           <Col xs={6} md={2}>
             <Image src="public\Images\nextjs.png" fluid rounded />
@@ -58,6 +59,12 @@ const Expertise = React.forwardRef((props, ref) => {
           </Col>
           <Col xs={6} md={2}>
             <Image src="public\Images\handlebarsjs.png" fluid rounded />
+          </Col>
+          <Col xs={6} md={2}>
+            <Image src="public\Images\axios.jpg" fluid rounded />
+          </Col>
+          <Col xs={6} md={2}>
+            <Image src="public\Images\api.png" fluid rounded />
           </Col>
                   </Row>
       </Container>
