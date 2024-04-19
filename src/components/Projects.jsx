@@ -20,6 +20,8 @@ const Projects = React.forwardRef((props, ref) => {
         { id: 3, name: "Javascript", image: "public/Images/javascript.png" },
         { id: 4, name: "git", image: "public/Images/git.png" },
       ],
+      github:"",
+      website:"",
       description:
         "Chic & Eggs is an engaging word puzzle game that challenges players with limited trials and offers a range of difficulty levels to suit every player. Test your vocabulary and strategic skills as you navigate through a series of challenging word puzzles. With its sleek design and intuitive gameplay, Chic & Eggs is the perfect brain-teaser for puzzle enthusiasts of all ages.",
     },
@@ -91,7 +93,7 @@ const Projects = React.forwardRef((props, ref) => {
       <Carousel fade prevLabel="" nextLabel="">
         {projects.map((project) => (
           <Carousel.Item key={project.id}>
-            <Container>
+            <Container >
               <Row>
                 <Col>
                   <div className="project-image-container">

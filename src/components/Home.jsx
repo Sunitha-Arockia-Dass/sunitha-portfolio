@@ -1,38 +1,45 @@
-// Home.jsx
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Home = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="home">
+    <div ref={ref} className="home-section">
       <Container>
         <Row>
-          <Col xs={6}>
-            <h4>Welcome to Sunitha's Page</h4>
-            <p>
-              I am <b>Sunitha Josephine Theresa Arockia Dass</b>
-            </p>
-            <p>
-              Aspiring <b>Full Stack Web Developer</b> based in{" "}
-              <b>Utrecht, Netherlands.</b>
-            </p>
-            <p>
-              An enthusiastic individual with a drive to excel in my career and
-              contribute to impactful projects, I'm excited to showcase my work
-              and express my dedication to web development. Let's collaborate to
-              craft innovative digital solutions and shape a promising future
-              together!
-            </p>
+          <h1>Welcome to my Portfolio</h1>
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center landing"
+          >
+            <div className="landing-description">
+              <p>
+                I am <b>Sunitha Josephine Theresa Arockia Dass</b>
+              </p>
+              <p>
+                Aspiring <b>Full Stack Web Developer / Frontend Developer</b>{" "}
+                based in <b>Utrecht, Netherlands.</b>
+              </p>
+              <p>
+                As a frontend developer, I specialize in creating visually
+                appealing and user-friendly web applications. Here, you'll find
+                a collection of my projects demonstrating my skills in{" "}
+                <b>HTML</b>,<b>CSS</b>, <b>JavaScript</b>JavaScript, and various{" "}
+                <b>frontend frameworks</b>. Feel free to explore my work and
+                don't hesitate to reach out for collaboration opportunities or
+                inquiries.
+              </p>
+            </div>
           </Col>
           <Col
-            sm={4}
-            className="d-flex justify-content-center align-items-center">
-            <img
-              className="home-img"
-              src="public\Images\sunitha.jpeg"
-              alt="pic error"/>
+            md={6}
+            className="d-flex align-items-center justify-content-center landing"
+          >
+            <Image
+              className="home-img text-center"
+              src="public/Images/sunitha.jpeg"
+              alt="Sunitha Josephine Theresa Arockia Dass"
+              fluid
+            />
           </Col>
         </Row>
       </Container>

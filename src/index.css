@@ -1,16 +1,45 @@
-.home, .about, .contact{
-    height: 100%;
+body{
+  background-color: rgb(242, 182, 222) !important;
+  color:rgb(87, 17, 87) !important ;
 }
-.home{
-    margin-top: 65px;
+
+.home-section, .expertise, .about, .contact{
+    /* height: 100vh; */
+}
+.home-section{
+    margin: 75px 0px 100px 0px;
+}
+.home-section .landing{
+  margin-top: 20px;
+}
+.home-section .landing .landing-description p{
+  font-size: 1.4em;
+  text-indent: 40px;
+  text-align: center;
+}
+.home-section h1, .expertise h1, .projects-container h1, .about-section h1, .contact-section h1{
+  text-align: center;
+  margin: 50px auto;
+}
+.landing .home-img{
+  height: 100%;
+  width: 60%;
+
+}
+.navbar{
+  background-color: rgb(87, 17, 87);
 }
 .navbar-fixed {
     position: fixed ;
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
 
+  }
+  .navbar-fixed .nav-link,.navbar-fixed .navbar-brand  {
+    color: white; 
+  }
+ 
 .dark-mode-toggle {
     background: none;
     border: none;
@@ -27,61 +56,49 @@
     /* Style for light mode button */
     color: #000; /* Change text color for light mode */
   }
-  
-.home-img{
-    border-radius: 50%;
-    height: 70%;
-    width: 50%;
-}
-.home .container{
-    /* max-width: fit-content; */
-    margin: 0 auto;
-    /* width: 100vw; */
-}
-.home p{
-    text-align: center;
-}
-.home h4{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
+
 .expertise img{
     width: 60%;
     height: 70%;
     padding: 20px;
-    border: 1px solid purple;
+    border: 1px solid rgb(87, 17, 87);
 }
+
 .expertise h1, .projects h1{
     text-align: center;
 margin: 25px 0px 45px 0px;
 }
 .expertise .row{
-    padding-top: 20px;
-}
+margin-top: 100px;}
 .projects-container{
   width: 100%;
   height: 800px;
   margin: 0 auto;
 
 }
-.project-image-container {
-  width: 100%;
-  height: 600px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.project-image {
-  max-width: 100%; 
-  max-height: 100%; 
-  object-fit: contain; 
-}
-.project-caption {
-  color: black;
+  .project-image-container {
+    display: flex;
+    justify-content: center;
+  }
   
-}
+  .project-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .project-caption {
+    color: black;
+    width: 80%;
+  }
+  
+  @media (min-width: 768px) {
+    .project-image-container {
+      height: auto; /* Remove fixed height */
+      min-height: 300px; /* Set a minimum height */
+    }
+  }
 .project-caption h3, .project-caption p{
   text-align: center;
 }
@@ -96,7 +113,7 @@ margin: 25px 0px 45px 0px;
   background-color: darkred; 
 }
 .tech-images-container {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -116,7 +133,8 @@ margin: 25px 0px 45px 0px;
   margin: 10px;
 }
 .project-btns button{
-padding: 10px 70px;
+  margin-left: 20px;
+padding: 10px 50px;
 background-color: white ;
 color: black;
 border-radius: 15px;
@@ -127,3 +145,61 @@ border-radius: 15px;
 .project-btns Button:first-child img {
 height: 20px
 ;}
+.contact-section {
+  padding: 20px;
+  background-color: rgb(87, 17, 87);
+  color: white;
+}
+.contact-item a{
+  text-decoration: none;
+  color: white;
+}
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contact-item svg {
+  margin-right: 10px;
+  vertical-align: middle; 
+  font-size: 48px;
+}
+
+.contact-item p {
+  margin-bottom: 0; 
+  line-height: 1; 
+}
+.about-section {
+  width: 99%;
+  overflow-x: hidden;
+  margin : 0 auto
+}
+.experience-item > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description{
+  padding-left: 10px;
+}
+.about-content h2{
+text-align: center;
+}
+.about-text p{
+    text-indent: 40px; 
+
+}
+.about-section .about-description {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+.about-content .description-card{
+  height: 100%
+}

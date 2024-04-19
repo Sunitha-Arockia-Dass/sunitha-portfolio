@@ -1,17 +1,14 @@
 
 import React from 'react';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
+import {Col,Container,Image,Row} from 'react-bootstrap';
 import HTML from "../../public/Images/html5.png"
 
 const Expertise = React.forwardRef((props, ref) => {
   return (
-    <div ref={ref} className='expertise'>
+    <div ref={ref} className='expertise '>
       <h1>Mastering the Craft</h1> 
-      <Container className="d-flex justify-content-center">
-        <Row>
+      <Container className="d-flex justify-content-center align-items-center">
+        <Row >
           <Col xs={6} md={2}>
             <Image src={HTML} fluid rounded />
           </Col>
