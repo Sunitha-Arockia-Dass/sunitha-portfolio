@@ -1,0 +1,30 @@
+name: Deploy to Firebase
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build  # Adjust this command according to your project setup
+
+    - name: Deploy to Firebase
+      run: |
+        npm install -g firebase-tools
+        firebase deploy --token ${{ 1//09WY1Bgi3dQPcCgYIARAAGAkSNwF-L9IrNrQArqNTFKLvoEv7oS3OjSNlZH81waVK5HcJXfqbcmUhtmRxatiKmqKORRxMil1XX6U}}
