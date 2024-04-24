@@ -53,7 +53,7 @@ const About = React.forwardRef((props, ref) => {
             <Card.Body>
               <Row>
                 <Col xs={12} md={6}>
-                  <Card className="about-card">
+                  <Card className="about-card education-card">
                     <Card.Body>
                       <h3>Education</h3>
                       <div className="education-item">
@@ -97,8 +97,8 @@ const About = React.forwardRef((props, ref) => {
                   <div className="experience-item">
                     <AiOutlineUser />
                     <div>
-                      <p>Career Break</p>
-                      <p>08/2016 - 05/2023</p>
+                      <h6>Career Break</h6>
+                      <h6>08/2016 - 05/2023</h6>
                     </div>
                     <div>
                       <p>
@@ -113,9 +113,9 @@ const About = React.forwardRef((props, ref) => {
                   <div className="experience-item">
                     <AiOutlineUser />
                     <div>
-                      <p>Medical Coder</p>
-                      <p>07/2015 - 07/2016</p>
-                      <p>Intelenet Global Services, Chennai, India</p>
+                      <h6>Medical Coder</h6>
+                      <h6>07/2015 - 07/2016</h6>
+                      <h6>Intelenet Global Services, Chennai, India</h6>
                     </div>
                     <div>
                       <p>
@@ -129,9 +129,9 @@ const About = React.forwardRef((props, ref) => {
                   <div className="experience-item">
                     <AiOutlineUser />
                     <div>
-                      <p>Data Indexer</p>
-                      <p>05/2014 - 06/2015</p>
-                      <p>Scope Eknowledge Center, Chennai, India</p>
+                      <h6>Data Indexer</h6>
+                      <h6>05/2014 - 06/2015</h6>
+                      <h6>Scope Eknowledge Center, Chennai, India</h6>
                     </div>
                     <div>
                       <p>
