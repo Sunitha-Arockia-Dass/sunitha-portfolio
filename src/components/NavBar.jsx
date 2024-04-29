@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Image } from "react-bootstrap";
 import DarkModeToggle from "./DarkModeToggle";
+import logo from "../../public/Images/logo.webp"
 
 function NavBar({
   scrollToHome,
@@ -13,7 +14,8 @@ function NavBar({
     <div className="navbar-fixed navbar">
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand>SA</Navbar.Brand>
+          <Navbar.Brand><Image src={logo} fluid rounded  width="40"
+              height="40" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav

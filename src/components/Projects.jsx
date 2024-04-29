@@ -29,7 +29,7 @@ const Projects = React.forwardRef((props, ref) => {
   const projects = [
     {
       id: 1,
-      imageUrl: "public/Images/Chiceggs.png",
+      imageUrl: "../../public/Images/chiceggs.png",
       title: "Chic & Eggs",
       techs: [
         { id: 1, name: "HTML5", image: Html5 },
@@ -44,7 +44,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 2,
-      imageUrl: "public/Images/HEALTH.png",
+      imageUrl: "../../public/Images/health.png",
       title: "H.E.A.L.T.H",
       github: "https://github.com/Sunitha-Arockia-Dass/HEALTH",
       website: "https://kind-pink-iguana-gown.cyclic.app/",
@@ -66,7 +66,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 3,
-      imageUrl: "public/Images/SThospital.png",
+      imageUrl: "../../public/Images/SThospital.png",
       title: "ST Hospital",
       github: "https://github.com/Sunitha-Arockia-Dass/ST-Hospital-Client",
       website: "https://musical-buttercream-e1a1d2.netlify.app/",
@@ -90,7 +90,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 4,
-      imageUrl: "public/Images/portfolio.png",
+      imageUrl: "../../public/Images/portfolio.png",
       title: "Portfolio",
       github: "https://github.com/Sunitha-Arockia-Dass/portfolio",
       website: "https://sunitha-arockia-dass.github.io/portfolio/",
