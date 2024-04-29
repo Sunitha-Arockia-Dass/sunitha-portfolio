@@ -228,6 +228,7 @@ color: inherit;
 }
 .rounded-circle {
   margin-bottom: 10px;
+  width: 65%;
 }
 .about-description {
   padding-left: 10px;
