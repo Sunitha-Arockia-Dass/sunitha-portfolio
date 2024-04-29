@@ -1,11 +1,5 @@
 import React from "react";
 import { Col, Container, Carousel, Image, Row, OverlayTrigger, Tooltip ,Button} from 'react-bootstrap';
-// import Carousel from "react-bootstrap/Carousel";
-// import Image from "react-bootstrap/Image";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-// import Container from "react-bootstrap/Container";
-// import Button from "react-bootstrap/Button";
 import Explore from "../../public/Images/explore.svg";
 import Git from "../../public/Images/git.png";
 
@@ -74,7 +68,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 4,
-      imageUrl: "public/Images/javascript.png",
+      imageUrl: "public/Images/portfolio.png",
       title: "Portfolio",
       github: "https://github.com/Sunitha-Arockia-Dass/portfolio",
       website: "https://sunitha-arockia-dass.github.io/portfolio/",
