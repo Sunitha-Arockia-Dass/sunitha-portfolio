@@ -22,8 +22,8 @@ const Home = React.forwardRef((props, ref) => {
               <p>
                 As a frontend developer, I specialize in creating visually
                 appealing and user-friendly web applications. Here, you'll find
-                a collection of my projects demonstrating my skills in{" "}
-                <b>HTML</b>,<b>CSS</b>, <b>JavaScript</b>JavaScript, and various{" "}
+                a collection of my projects demonstrating my skills in
+                <b>HTML</b>,<b>CSS</b>, <b>JavaScript</b>, and various
                 <b>frontend frameworks</b>. Feel free to explore my work and
                 don't hesitate to reach out for collaboration opportunities or
                 inquiries.

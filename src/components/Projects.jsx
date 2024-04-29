@@ -1,12 +1,13 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+import { Col, Container, Carousel, Image, Row, OverlayTrigger, Tooltip ,Button} from 'react-bootstrap';
+// import Carousel from "react-bootstrap/Carousel";
+// import Image from "react-bootstrap/Image";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import Button from "react-bootstrap/Button";
 import Explore from "../../public/Images/explore.svg";
-import Git from "../../public/Images/git.png"
+import Git from "../../public/Images/git.png";
 
 const Projects = React.forwardRef((props, ref) => {
   const projects = [
@@ -20,8 +21,8 @@ const Projects = React.forwardRef((props, ref) => {
         { id: 3, name: "Javascript", image: "public/Images/javascript.png" },
         { id: 4, name: "git", image: "public/Images/git.png" },
       ],
-      github:"",
-      website:"",
+      github: "https://github.com/Sunitha-Arockia-Dass/Chic-Eggs",
+      website: "https://sunitha-arockia-dass.github.io/Chic-Eggs/",
       description:
         "Chic & Eggs is an engaging word puzzle game that challenges players with limited trials and offers a range of difficulty levels to suit every player. Test your vocabulary and strategic skills as you navigate through a series of challenging word puzzles. With its sleek design and intuitive gameplay, Chic & Eggs is the perfect brain-teaser for puzzle enthusiasts of all ages.",
     },
@@ -29,6 +30,8 @@ const Projects = React.forwardRef((props, ref) => {
       id: 2,
       imageUrl: "public/Images/HEALTH.png",
       title: "H.E.A.L.T.H",
+      github: "https://github.com/Sunitha-Arockia-Dass/HEALTH",
+      website: "https://kind-pink-iguana-gown.cyclic.app/",
       techs: [
         { id: 1, name: "HTML5", image: "public/Images/html5.png" },
         { id: 2, name: "CSS3", image: "public/Images/css3.png" },
@@ -49,6 +52,8 @@ const Projects = React.forwardRef((props, ref) => {
       id: 3,
       imageUrl: "public/Images/SThospital.png",
       title: "ST Hospital",
+      github: "https://github.com/Sunitha-Arockia-Dass/ST-Hospital-Client",
+      website: "https://musical-buttercream-e1a1d2.netlify.app/",
       techs: [
         { id: 1, name: "HTML5", image: "public/Images/html5.png" },
         { id: 2, name: "CSS3", image: "public/Images/css3.png" },
@@ -71,6 +76,8 @@ const Projects = React.forwardRef((props, ref) => {
       id: 4,
       imageUrl: "public/Images/javascript.png",
       title: "Portfolio",
+      github: "https://github.com/Sunitha-Arockia-Dass/portfolio",
+      website: "https://sunitha-arockia-dass.github.io/portfolio/",
       techs: [
         { id: 1, name: "React", image: "public/Images/react.png" },
         {
@@ -93,7 +100,7 @@ const Projects = React.forwardRef((props, ref) => {
       <Carousel fade prevLabel="" nextLabel="">
         {projects.map((project) => (
           <Carousel.Item key={project.id}>
-            <Container >
+            <Container>
               <Row>
                 <Col>
                   <div className="project-image-container">
@@ -106,34 +113,56 @@ const Projects = React.forwardRef((props, ref) => {
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
                   <div className="project-caption">
-                    <h3>{project.title}</h3>
+                    <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <div className="tech-images-container">
-                      {project.techs.map((tech) => (
+                      {project.techs.map((tech,index) => (
                         <div key={tech.id} className="tech-slide">
-                          <Image
-                            src={tech.image}
-                            className="projects-tech-image"
-                            fluid
-                            rounded
-                          />
+                          <OverlayTrigger
+                            placement="bottom"
+                            overlay={
+                              <Tooltip id={`tooltip-${index}`}>
+                                {tech.name}
+                              </Tooltip>
+                            }
+                          >
+                            <Image
+                              src={tech.image}
+                              className="projects-tech-image"
+                              fluid
+                              rounded
+                            />
+                          </OverlayTrigger>
                         </div>
                       ))}
                     </div>
                     <div className="project-btns">
                       <Button>
-                        <Image src={Git} fluid rounded />
-                        Repository
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          className="custom-link"
+                        >
+                          <Image src={Git} fluid rounded />
+                          Repository
+                        </a>
                       </Button>
                       <Button>
-                        <Image src={Explore} fluid rounded />
-                        Explore
+                        <a
+                          href={project.website}
+                          target="_blank"
+                          className="custom-link"
+                        >
+                          <Image src={Explore} fluid rounded />
+                          Explore
+                        </a>
                       </Button>
                     </div>
                   </div>
                 </Col>
               </Row>
             </Container>
+            1
           </Carousel.Item>
         ))}
       </Carousel>
