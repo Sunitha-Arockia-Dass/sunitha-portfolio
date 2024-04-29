@@ -24,12 +24,16 @@ import Api from "../../public/Images/api.png";
 import ReactIcon from "../../public/Images/react.png";
 import Gsap from "../../public/Images/gsap.png";
 import ReactBootstrap from "../../public/Images/reactbootstrap.png";
+import Portfolio from "../../public/Images/portfolio.png";
+import Chiceggs from "../../public/Images/Chiceggs.png";
+import Health from "../../public/Images/HEALTH.png";
+import SThospital from "../../public/Images/SThospital.png";
 
 const Projects = React.forwardRef((props, ref) => {
   const projects = [
     {
       id: 1,
-      imageUrl: "../../public/Images/chiceggs.png",
+      imageUrl: Chiceggs,
       title: "Chic & Eggs",
       techs: [
         { id: 1, name: "HTML5", image: Html5 },
@@ -44,7 +48,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 2,
-      imageUrl: "../../public/Images/health.png",
+      imageUrl: Health,
       title: "H.E.A.L.T.H",
       github: "https://github.com/Sunitha-Arockia-Dass/HEALTH",
       website: "https://kind-pink-iguana-gown.cyclic.app/",
@@ -66,7 +70,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 3,
-      imageUrl: "../../public/Images/SThospital.png",
+      imageUrl: SThospital,
       title: "ST Hospital",
       github: "https://github.com/Sunitha-Arockia-Dass/ST-Hospital-Client",
       website: "https://musical-buttercream-e1a1d2.netlify.app/",
@@ -90,7 +94,7 @@ const Projects = React.forwardRef((props, ref) => {
     },
     {
       id: 4,
-      imageUrl: "../../public/Images/portfolio.png",
+      imageUrl: Portfolio,
       title: "Portfolio",
       github: "https://github.com/Sunitha-Arockia-Dass/portfolio",
       website: "https://sunitha-arockia-dass.github.io/portfolio/",
