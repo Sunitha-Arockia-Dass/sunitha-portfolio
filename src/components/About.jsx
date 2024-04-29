@@ -24,9 +24,9 @@ const About = React.forwardRef((props, ref) => {
                       </h3>
                       <p>
                         Based in Utrecht, Netherlands, I craft digital wonders
-                        that dazzle and delight. With a magic wand called<b> HTML,
-                        CSS, JavaScript, React, and Vue.js</b>, I turn ideas into
-                        eye-catching websites.
+                        that dazzle and delight. With a magic wand called
+                        <b> HTML, CSS, JavaScript, React, and Vue.js</b>, I turn
+                        ideas into eye-catching websites.
                       </p>
                       <p>
                         When I'm not conjuring up code spells, you'll find me

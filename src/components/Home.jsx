@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import sunitha from "../../public/Images/sunitha.jpeg";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -23,7 +24,7 @@ const Home = React.forwardRef((props, ref) => {
                 As a frontend developer, I specialize in creating visually
                 appealing and user-friendly web applications. Here, you'll find
                 a collection of my projects demonstrating my skills in
-                <b> HTML</b>,<b> CSS</b>, <b> JavaScript</b>, and various 
+                <b> HTML</b>,<b> CSS</b>, <b> JavaScript</b>, and various
                 <b> frontend frameworks</b>. Feel free to explore my work and
                 don't hesitate to reach out for collaboration opportunities or
                 inquiries.
@@ -36,7 +37,7 @@ const Home = React.forwardRef((props, ref) => {
           >
             <Image
               className="home-img text-center"
-              src="public/Images/sunitha.jpeg"
+              src={sunitha}
               alt="Sunitha Josephine Theresa Arockia Dass"
               fluid
             />

@@ -19,18 +19,18 @@ const Contact = React.forwardRef((props, ref) => {
       message: e.target.message.value,
     };
     console.log(formData);
-     axios
-    .post(
-      "https://st-hospital-server.adaptable.app/appointment/sendMail",
-      formData
-    )
-    .then((response) => {
-      console.log("mail sent successfully")
-    })
-    .catch((error) => {
-      // setErrorMessage(error.response.data.message);
-      console.log("error")
-    });
+    axios
+      .post(
+        "https://st-hospital-server.adaptable.app/appointment/sendMail",
+        formData
+      )
+      .then((response) => {
+        console.log("mail sent successfully");
+      })
+      .catch((error) => {
+        // setErrorMessage(error.response.data.message);
+        console.log("error");
+      });
   };
 
   return (
@@ -43,7 +43,6 @@ const Contact = React.forwardRef((props, ref) => {
             <a href="mailto:sunithatheresa18@gmail.com">
               sunithatheresa18@gmail.com
             </a>
-
           </div>
         </Col>
         {/* <Col xs={12} md={4}>
